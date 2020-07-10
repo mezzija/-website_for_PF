@@ -1,0 +1,43 @@
+@import "variables";
+.footer{
+  background-color: $black;
+  padding: 70px 0 50px 0;
+  img{
+    margin-right: 63px;
+  }
+  .jBsu{
+    width: 25%;
+  }
+  .block{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .title{
+    font-size: 20px;
+    color: $white;
+    text-align: left;
+  }
+  .footer_icon{
+    display: flex;
+    justify-content: center;
+    .icon_size{
+      font-size: 40px;
+    }
+    .youtube{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $prime;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      color: $black;
+    }
+    a{
+      margin: 0 10px;
+    }
+  }
+
+}

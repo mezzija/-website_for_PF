@@ -1,0 +1,134 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css")
+        title Физический факультет,
+    body
+        include ./svg/svg
+        include ./template/header
+        #header_img.header__image
+            svg.header__logotype
+                use(href='#logotype')
+        .main
+            .container
+                .row.center-lg.center-md.center-sm.center-xs
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card1
+                            p О факультете
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card2
+                            p Поступление
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card3
+                            p  Сотрудничество
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card4
+                            p  Наука
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card5
+                            p  Образование
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .main_bg.main_card6
+                            p  Контакты
+        .news
+            .container
+                .news_position
+                    img(src=require('../assets/images/news_image.png').default)
+                    .news_inf
+                        .title
+                            | Заместитель Генерального директора МАГАТЭ выступил на Дне атомных технологий в Минске!
+                        .description
+                            | В этом году участники Дня атомных технологий получили уникальную возможность пообщаться с заместителем Генерального директора, руководителем Департамента ядерной энергии МАГАТЭ Михаилом Чудаковым.
+                        .news_button
+                            a.button_more(href='#')
+                                | Подробнее
+                            a.news_more(href='#')
+                                | Больше новостей
+        .event
+            .container
+                .event_position
+                    img(src=require('../assets/images/event_image.png').default)
+                    .event_inf
+                        .title
+                            | Студенческая жизнь
+                        .description
+                            |Каждый найдет себе занятие
+                            br
+                            |на свободное время!
+                            .event_list
+                                ul
+                                    li Художественое декорирование
+                                    li Фотография/видео
+                                    li Хореографи
+                                ul
+                                    li Дизайн
+                                    li Вокал
+                                    li SMM
+                        a.button_more(href='#')
+                            | Присоединиться
+
+        .numbers
+            .container
+                .numbers_title Физический факультет в цифрах
+                .row.news_block.center-lg.center-md.center-sm.center-xs
+                    .block.col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .title 10
+                        .description Научно-исследовательских лабораторий
+                    .block.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                        .title 186
+                        .description
+                            |Преподавателей
+                            br
+                            |с ученой
+                            br
+                            |степенью
+                    .block.prime_bg.col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .title 50
+                        .description Выпускников- академиков НАН Беларуси
+                    .block.col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .title.prime_bg 5
+                        .description Специальностей
+                    .block.col-lg-3.col-md-3.col-sm-12.col-xs-12
+                        .title 11
+                        .description Кафедр
+        .publication
+            .container
+                .publication_title Крайние публикации
+                .publication_page.row.center-lg.center-md.center-sm.center-xs
+                    .col-lg-4.col-md-4
+                        img(src=require('../assets/images/publication1.png').default)
+                        .description Photoluminescence kinetics for monitoring photoinduced processe
+                    .col-lg-4.col-md-4.publication_none
+                        img(src=require('../assets/images/publication2.png').default)
+                        .description Atmospheric adsorption on pristine and nitrogen-doped graphene: doping-dependent, spatially selective
+                    .col-lg-4.col-md-4.publication_none
+                        img(src=require('../assets/images/publication3.png').default)
+                        .description Effective p-type photocurrent sensitization of n-Bi2O3 with p-C
+                a.button_more(href='#')
+                    | Подробнее
+        .people
+            .container
+                .people_title Известные выпускники
+                .people_page.row.between-lg.between-md.center-sm.center-xs
+                    .block.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                        img(src=require('../assets/images/people1.png').default)
+                        .title Кислый Виктор Владимирович
+                        .about выпускник 1999 года
+                        .description Основатель компании «Game Stream» (1998 г.). В том же году зарегистрировал компанию Wargaming, стал ее генеральным директором. Создатель знаменитой игры «World of Tanks».
+                    .block.col-lg-3.col-md-3.publication_none
+                        img(src=require('../assets/images/people2.png').default)
+                        .title Румянцев Михаил Леонидович
+                        .about выпускник 2011 года
+                        .description Основатель и генеральный директор стартап-компании «FriendlyData» (с 2016 г.); вошел в рейтинг молодых бизнесменов «2019 Европа 30 до 30», составленный журналом Forbes в категории «Технологии».
+                    .block.col-lg-3.col-md-3.publication_none
+                        img(src=require('../assets/images/people3.png').default)
+                        .title Кондрашов Олег Владимирович
+                        .about выпускник 2007 года
+                        .description Генеральный директор компании EnCata - инжинирингового центра по разработке и производству промышленных прототипов; «Минчанин года — 2016» в области промышленности.
+
+
+                a.button_more(href='#')
+                    | Подробнее
+        include ./template/footer

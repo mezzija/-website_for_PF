@@ -1,0 +1,71 @@
+@import "variables";
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  color: $white;
+  font-size: 20px;
+  height: 90px;
+  position: relative;
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  color: $white;
+  p{
+    text-transform: uppercase;
+  }
+}
+.header_menu{
+  display: flex;
+  justify-content: flex-end;
+  color: $white;
+}
+.header_active{
+  display: none;
+}
+
+.nav{
+  position: absolute;
+  top: 90px;
+  background-color: $black;
+  width: 100%;
+  padding: 20px 0 50px 0;
+  p{
+    color: $prime;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  a{
+    color: $white;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .position{
+    display: flex;
+    flex-direction: column;
+  }
+  .youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $prime;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: $black;
+  }
+  .header_icon{
+    display: flex;
+    padding-top: 40px;
+    a{
+      margin-right: 15px;
+    }
+  }
+  .icon_size{
+    font-size: 40px;
+  }
+}
