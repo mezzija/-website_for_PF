@@ -1,0 +1,20 @@
+@import "variables";
+.dekanat{
+  background-color:$white ;
+  padding: 50px 0;
+
+  .page{
+    text-align: left;
+    padding-bottom: 70px;
+    .title{
+      font-size: 25px;
+      font-weight: 700;
+      padding: 10px 0 20px 0;
+
+    }
+    .description{
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
