@@ -27,7 +27,7 @@
 
 .nav{
   position: absolute;
-  top: 90px;
+  top: 88px;
   background-color: $black;
   width: 100%;
   padding: 20px 0 50px 0;
@@ -42,6 +42,9 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
+    &:hover{
+      font-size: 18px;
+    }
   }
   .position{
     display: flex;
@@ -63,6 +66,9 @@
     padding-top: 40px;
     a{
       margin-right: 15px;
+      &:hover{
+        font-size: 30px;
+      }
     }
   }
   .icon_size{
