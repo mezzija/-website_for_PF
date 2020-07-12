@@ -1,4 +1,7 @@
 @import "variables";
+@import "../flexboxgrid.css";
+@import "dekanat";
+@import "news";
 @import "fonts";
 @import "header";
 @import "footer";
@@ -64,6 +67,11 @@ a {
   font-size: 25px;
   color: #ffffff;
 }
+.page_name{
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
 
 /*----------------main--------*/
 .main {
@@ -81,11 +89,15 @@ a {
     height: 270px;
     padding: 0 20px;
     margin-bottom: 50px;
+    &:hover{
+      color: $white;
+    }
   }
 
   p {
     background-color: $prime;
     padding: 10px 15px;
+
   }
 
   .main_card1 {

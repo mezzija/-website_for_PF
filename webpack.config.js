@@ -47,6 +47,10 @@ const config = {
 
             },
             {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.pug$/,
                 use: ['pug-loader'],
             },
@@ -77,10 +81,30 @@ const config = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
+        /*new HtmlWebpackPlugin({
+            filename:'main.html',
             template: './src/pug/index.pug',
             minify:false,
-            title: 'Физический факултет',
+            favicon: './src/assets/images/atom.ico',
+            chunksSortMode: 'auto',
+
+
+        }),*/
+        /*new HtmlWebpackPlugin({
+            template: './src/pug/pages/dekanat.pug',
+            minify:false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),*/
+      /*  new HtmlWebpackPlugin({
+            template: './src/pug/pages/news.pug',
+            minify:false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),*/
+        new HtmlWebpackPlugin({
+            template: './src/pug/pages/spec.pug',
+            minify:false,
             favicon: './src/assets/images/atom.ico',
 
         }),
