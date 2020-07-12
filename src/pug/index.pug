@@ -4,14 +4,18 @@ html
         meta(charset='utf-8')
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css")
-        title Физический факультет,
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css")
+        title Физический факультет
+        script
+            include ../assets/wow.js
+
     body
         include ./svg/svg
         include ./template/header
-        #header_img.header__image
+        #header_img.header__image.wow.animate__animated.animate__fadeInDown
             svg.header__logotype
                 use(href='#logotype')
-        .main
+        .main.wow.animate__animated.animate__fadeIn
             .container
                 .row.center-lg.center-md.center-sm.center-xs
                     a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
@@ -32,11 +36,11 @@ html
                     a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
                         .main_bg.main_card6
                             p  Контакты
-        .news
+        .news.wow.animate__animated.animate__fadeIn
             .container
                 .news_position
-                    img(src=require('../assets/images/news_image.png').default)
-                    .news_inf
+                    img.wow.animate__animated.animate__fadeInLeft(src=require('../assets/images/news_image.png').default)
+                    .news_inf.wow.animate__animated.animate__fadeInRight
                         .title
                             | Заместитель Генерального директора МАГАТЭ выступил на Дне атомных технологий в Минске!
                         .description
@@ -46,11 +50,11 @@ html
                                 | Подробнее
                             a.news_more(href='#')
                                 | Больше новостей
-        .event
+        .event.wow.animate__animated.animate__fadeIn
             .container
                 .event_position
-                    img(src=require('../assets/images/event_image.png').default)
-                    .event_inf
+                    img.wow.animate__animated.animate__fadeInRight(src=require('../assets/images/event_image.png').default)
+                    .event_inf.wow.animate__animated.animate__fadeInLeft
                         .title
                             | Студенческая жизнь
                         .description
@@ -69,7 +73,7 @@ html
                         a.button_more(href='#')
                             | Присоединиться
 
-        .numbers
+        .numbers.wow.animate__animated.animate__fadeIn
             .container
                 .numbers_title Физический факультет в цифрах
                 .row.news_block.center-lg.center-md.center-sm.center-xs
@@ -97,13 +101,13 @@ html
             .container
                 .publication_title Крайние публикации
                 .publication_page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-4.col-md-4
+                    .col-lg-4.col-md-4.wow.animate__animated.animate__fadeInLeft
                         img(src=require('../assets/images/publication1.png').default)
                         .description Photoluminescence kinetics for monitoring photoinduced processe
                     .col-lg-4.col-md-4.publication_none
                         img(src=require('../assets/images/publication2.png').default)
                         .description Atmospheric adsorption on pristine and nitrogen-doped graphene: doping-dependent, spatially selective
-                    .col-lg-4.col-md-4.publication_none
+                    .col-lg-4.col-md-4.publication_none.wow.animate__animated.animate__fadeInRight
                         img(src=require('../assets/images/publication3.png').default)
                         .description Effective p-type photocurrent sensitization of n-Bi2O3 with p-C
                 a.button_more(href='#')
@@ -112,17 +116,17 @@ html
             .container
                 .people_title Известные выпускники
                 .people_page.row.between-lg.between-md.center-sm.center-xs
-                    .block.col-lg-3.col-md-3.col-sm-6.col-xs-6
+                    .block.col-lg-3.col-md-3.col-sm-6.col-xs-6.wow.animate__animated.animate__fadeInLeft
                         img(src=require('../assets/images/people1.png').default)
                         .title Кислый Виктор Владимирович
                         .about выпускник 1999 года
                         .description Основатель компании «Game Stream» (1998 г.). В том же году зарегистрировал компанию Wargaming, стал ее генеральным директором. Создатель знаменитой игры «World of Tanks».
-                    .block.col-lg-3.col-md-3.publication_none
+                    .block.col-lg-3.col-md-3.publication_none.wow.animate__animated.animate__fadeIn
                         img(src=require('../assets/images/people2.png').default)
                         .title Румянцев Михаил Леонидович
                         .about выпускник 2011 года
                         .description Основатель и генеральный директор стартап-компании «FriendlyData» (с 2016 г.); вошел в рейтинг молодых бизнесменов «2019 Европа 30 до 30», составленный журналом Forbes в категории «Технологии».
-                    .block.col-lg-3.col-md-3.publication_none
+                    .block.col-lg-3.col-md-3.publication_none.wow.animate__animated.animate__fadeInRight
                         img(src=require('../assets/images/people3.png').default)
                         .title Кондрашов Олег Владимирович
                         .about выпускник 2007 года
