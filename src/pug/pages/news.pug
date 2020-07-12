@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Новости
+        script
+            include ../../assets/wow.js
+
+    body(style='background-color: #ffffff;')
+        include ../svg/svg
+        include ../template/header
+        .pageNews
+            .container
+                .page_name Новости
+                a(href='#').page.row
+                    img.col-lg-5.col-md-5.col-sm-12.col-xs-12(src=require('../../assets/images/news1.jpg').default)
+                    .inf.col-lg-7.col-md-7.col-sm-12.col-xs-12
+                        .title Новый буклет Физического факультета!
+                        .description Предлагаем вашему вниманию новый информационный буклет нашего факультета! В нем вы найдете краткую, но насыщенную историю Физического факультета, актуальную информацию о проводимой научной деятельности, яркие моменты из студенческой жизни, но самое главное - подробный и всесторонний обзор кафедр нашего факультета.
+        include ../template/footer
