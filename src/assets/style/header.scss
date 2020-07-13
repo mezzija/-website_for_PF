@@ -60,12 +60,13 @@
     height: 40px;
     font-size: 30px;
     color: $black;
+    margin: 0!important;
   }
   .header_icon{
     display: flex;
     padding-top: 40px;
     a{
-      margin-right: 15px;
+      margin-right: 10px;
       &:hover{
         font-size: 30px;
       }
