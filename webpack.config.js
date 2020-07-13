@@ -81,7 +81,7 @@ const config = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
+       new HtmlWebpackPlugin({
             filename:'main.html',
             template: './src/pug/index.pug',
             minify:false,
@@ -103,13 +103,7 @@ const config = {
             favicon: './src/assets/images/atom.ico',
 
         }),
-      /*  new HtmlWebpackPlugin({
-            filename: 'spe'
-            template: './src/pug/pages/pageNews.pug',
-            minify:false,
-            favicon: './src/assets/images/atom.ico',
 
-        }),*/
        new HtmlWebpackPlugin({
             filename: 'spex.html',
             template: './src/pug/pages/spec.pug',
@@ -117,6 +111,12 @@ const config = {
             favicon: './src/assets/images/atom.ico',
 
         }),
+      /*  new HtmlWebpackPlugin({
+            template: './src/pug/pages/pageNews.pug',
+            minify:false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),*/
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
