@@ -73,6 +73,20 @@ a {
   font-size: 30px;
   font-weight: 700;
 }
+.pages{
+  padding: 50px 0;
+  height: 60vh;
+  a{
+    display: block;
+    color: $black;
+    font-size: 25px;
+    padding-bottom: 20px;
+    &:hover{
+      color: $prime;
+      font-weight: 600;
+    }
+  }
+}
 
 /*----------------main--------*/
 .main {

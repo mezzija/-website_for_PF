@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
@@ -35,11 +35,11 @@ const config = {
                     },
                     {
                         loader: 'css-loader',
-                        options: {sourceMap:true}
+                        options: {sourceMap: true}
                     },
                     {
                         loader: 'sass-loader',
-                        options: {sourceMap:true}
+                        options: {sourceMap: true}
                     },
 
 
@@ -81,39 +81,79 @@ const config = {
     },
 
     plugins: [
-       /*new HtmlWebpackPlugin({
-            filename:'main.html',
+        new HtmlWebpackPlugin({
+            filename: 'main.html',
             template: './src/pug/index.pug',
-            minify:false,
+            minify: false,
             favicon: './src/assets/images/atom.ico',
-
-
         }),
         new HtmlWebpackPlugin({
-            filename:'dekanat.html',
+            filename: 'dekanat.html',
             template: './src/pug/pages/dekanat.pug',
-            minify:false,
+            minify: false,
             favicon: './src/assets/images/atom.ico',
 
         }),
         new HtmlWebpackPlugin({
-            filename:'news.html',
+            filename: 'news.html',
             template: './src/pug/pages/news.pug',
-            minify:false,
+            minify: false,
             favicon: './src/assets/images/atom.ico',
 
         }),
-
-       new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             filename: 'spex.html',
             template: './src/pug/pages/spec.pug',
-            minify:false,
+            minify: false,
             favicon: './src/assets/images/atom.ico',
 
-        }),*/
-       new HtmlWebpackPlugin({
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'pageNews.html',
             template: './src/pug/pages/pageNews.pug',
-            minify:false,
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '1.html',
+            template: './src/pug/pages/1.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '2.html',
+            template: './src/pug/pages/2.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '3.html',
+            template: './src/pug/pages/3.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '4.html',
+            template: './src/pug/pages/4.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '5.html',
+            template: './src/pug/pages/5.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: '6.html',
+            template: './src/pug/pages/6.pug',
+            minify: false,
             favicon: './src/assets/images/atom.ico',
 
         }),

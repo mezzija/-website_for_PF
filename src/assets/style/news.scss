@@ -1,12 +1,14 @@
 @import "variables";
 .pageNews{
   padding: 50px 0;
+
   img{
     margin-bottom: 10px;
   }
-  a{
+  .page{
     color: $black;
     padding: 15px 0;
+    margin-bottom: 50px;
     &:hover{
       box-shadow: 0 0 10px 0 $black;
     }
