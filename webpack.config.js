@@ -156,6 +156,21 @@ const config = {
             minify: false,
             favicon: './src/assets/images/atom.ico',
 
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'enrollee.html',
+            template: './src/pug/pages/enrollee.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'mainInf.html',
+            template: './src/pug/pages/mainInf.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
         }),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
