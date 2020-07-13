@@ -81,27 +81,37 @@ const config = {
     },
 
     plugins: [
-        /*new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
+            filename:'main.html',
             template: './src/pug/index.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
-            chunksSortMode: 'auto',
 
 
         }),
         new HtmlWebpackPlugin({
+            filename:'dekanat.html',
             template: './src/pug/pages/dekanat.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
 
         }),
         new HtmlWebpackPlugin({
+            filename:'news.html',
             template: './src/pug/pages/news.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
 
+        }),
+      /*  new HtmlWebpackPlugin({
+            filename: 'spe'
+            template: './src/pug/pages/pageNews.pug',
+            minify:false,
+            favicon: './src/assets/images/atom.ico',
+
         }),*/
-        new HtmlWebpackPlugin({
+       new HtmlWebpackPlugin({
+            filename: 'spex.html',
             template: './src/pug/pages/spec.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
