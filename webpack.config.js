@@ -82,21 +82,20 @@ const config = {
 
     plugins: [
         /*new HtmlWebpackPlugin({
-            filename:'main.html',
             template: './src/pug/index.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
             chunksSortMode: 'auto',
 
 
-        }),*/
-        /*new HtmlWebpackPlugin({
+        }),
+        new HtmlWebpackPlugin({
             template: './src/pug/pages/dekanat.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',
 
-        }),*/
-      /*  new HtmlWebpackPlugin({
+        }),
+        new HtmlWebpackPlugin({
             template: './src/pug/pages/news.pug',
             minify:false,
             favicon: './src/assets/images/atom.ico',

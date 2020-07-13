@@ -1,0 +1,40 @@
+@import "variables";
+.spec{
+  padding: 50px 0;
+  a{
+    &:hover{
+      color: $prime;
+      p{
+        color: $black;
+      }
+      span{
+        color: $black;
+      }
+    }
+  }
+  .title{
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    span{
+      font-weight: 400;
+    }
+    ul{
+      padding-top: 15px;
+      font-weight: 400;
+    }
+  }
+  .inf{
+    display: none;
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 0;
+    }
+  }
+}
+.specActive{
+  display: block!important;
+}
