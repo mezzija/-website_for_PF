@@ -5,7 +5,14 @@ const nav=document.getElementById('nav');
 const navMenu=document.getElementById('nav_menu');
 
 
-const pageSpec=document.getElementById('pageSpec')
+const pageSpec=document.getElementById('pageSpec');
+
+const changeButton=document.getElementById('change_button');
+changeButton.childNodes.forEach(item=>{
+    if(item.text.toLowerCase()===location.pathname.slice(1,3)){
+        item.classList.add('change_button_active');
+    }
+})
 
 if(pageSpec){
     pageSpec.addEventListener('click',(event)=>{
