@@ -82,12 +82,12 @@ const config = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            //filename: 'main.html',
+            filename: 'main.html',
             template: './src/pug/index.pug',
             minify: false,
             favicon: './src/assets/images/atom.ico',
         }),
-        /*new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             filename: 'dekanat.html',
             template: './src/pug/pages/dekanat.pug',
             minify: false,
@@ -171,7 +171,7 @@ const config = {
             minify: false,
             favicon: './src/assets/images/atom.ico',
 
-        }),*/
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
