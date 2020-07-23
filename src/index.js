@@ -24,8 +24,6 @@ if(pageSpec){
     });
 }
 
-
-
 navMenu.addEventListener('click',event=>{
     event.preventDefault();
     nav.classList.toggle('active');
