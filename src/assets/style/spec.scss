@@ -1,6 +1,7 @@
 @import "variables";
 .spec{
   padding: 50px 0;
+  cursor: pointer;
   a{
     &:hover{
       color: $prime;

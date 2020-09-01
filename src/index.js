@@ -17,7 +17,6 @@ changeButton.childNodes.forEach(item=>{
 if(pageSpec){
     pageSpec.addEventListener('click',(event)=>{
         event.preventDefault();
-        console.log(event.target)
         if(event.target.lastChild.classList){
             event.target.lastChild.classList.toggle('specActive');
         }

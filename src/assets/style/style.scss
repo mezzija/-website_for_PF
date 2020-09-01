@@ -74,6 +74,12 @@ a {
   font-size: 30px;
   font-weight: 700;
 }
+.noHeight {
+  height: unset !important;
+}
+.bold{
+  font-weight: 600;
+}
 .pages{
   padding: 50px 0;
   height: 600px;
@@ -335,5 +341,6 @@ a {
   }
 
 }
+
 
 @import "media";
