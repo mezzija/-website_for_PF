@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Расписание
+        script
+            include ../../assets/wow.js
+
+    body(style='background-color: #ffffff;')
+        include ../svg/svg
+        include ../template/header
+        .spec
+            .container
+                .page_name Расписание
+                #pageSpec.page_spec
+                    .speci.title  1 курс
+                        iframe(width="560" height="315" src="https://physics.bsu.by/ru/")
+                    .speci.title  2 курс
+                    .speci.title  3 курс
+                    .speci.title  4 курс
+                    .speci.title  5 курс
+
+        include ../template/footer
