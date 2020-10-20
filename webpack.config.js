@@ -179,6 +179,13 @@ const config = {
             favicon: './src/assets/images/atom.ico',
 
         }),
+        new HtmlWebpackPlugin({
+            filename: 'observatory.html',
+            template: './src/pug/pages/observatory.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

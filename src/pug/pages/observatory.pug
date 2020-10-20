@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Учебно-научная астрономическая лаборатория
+        script
+            include ../../assets/wow.js
+
+    body
+        include ../svg/svg
+        include ../template/header
+        .observatory
+            .container
+                .title Учебно-научная астрономическая лаборатория
+                .row.center-lg.center-md.center-sm.center-xs
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card1
+                            img(src=require('../../assets/images/observatory_5.jpg').default)
+                            p Сотрудники
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card2
+                            img(src=require('../../assets/images/observatory_2.jpg').default)
+                            p Оборудование
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card3
+                            img(src=require('../../assets/images/observatory_3.jpg').default)
+                            p  Научные направления
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card4
+                            img(src=require('../../assets/images/observatory_4.jpg').default)
+                            p  Учебно-методическая деятельность
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card5
+                            img(src=require('../../assets/images/observatory_1.jpg').default)
+                            p  Популяризация научных знаний
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card6
+                            img(src=require('../../assets/images/observatory_6.jpg').default)
+                            p  Публикации
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card6
+                            img(src=require('../../assets/images/observatory_7.jpg').default)
+                            p  Научные результаты
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card6
+                            img(src=require('../../assets/images/observatory_8.jpg').default)
+                            p  Образовательный астрономический ресурс
+                    a.col-lg-4.col-xs-12.col-md-6.col-sm-6(href='#')
+                        .observatory_bg.observatory_card6
+                            img(src=require('../../assets/images/observatory_9.jpg').default)
+                            p  Контакты
+
+
+        include ../template/footer
