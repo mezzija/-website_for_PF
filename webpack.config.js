@@ -186,6 +186,13 @@ const config = {
             favicon: './src/assets/images/atom.ico',
 
         }),
+        new HtmlWebpackPlugin({
+           filename: ' personTemplate.html',
+            template: './src/pug/pages/personTemplate.pug',
+            minify: false,
+            favicon: './src/assets/images/atom.ico',
+
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
