@@ -4,6 +4,21 @@ const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const HtmlPluginBuild = (filename,template) => {
+    return new HtmlWebpackPlugin({
+        filename,
+        template,
+        minify: false,
+        favicon: './src/assets/images/atom.ico',
+    })
+}
+const HtmlPluginDev = template => {
+    return new HtmlWebpackPlugin({
+        template,
+        minify: false,
+        favicon: './src/assets/images/atom.ico',
+    })
+}
 
 const config = {
     entry: {
@@ -88,111 +103,21 @@ const config = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'main.html',
-            template: './src/pug/index.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'dekanat.html',
-            template: './src/pug/pages/dekanat.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'news.html',
-            template: './src/pug/pages/news.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'spex.html',
-            template: './src/pug/pages/spec.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'pageNews.html',
-            template: './src/pug/pages/pageNews.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '1.html',
-            template: './src/pug/pages/1.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '2.html',
-            template: './src/pug/pages/2.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '3.html',
-            template: './src/pug/pages/3.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '4.html',
-            template: './src/pug/pages/4.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '5.html',
-            template: './src/pug/pages/5.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: '6.html',
-            template: './src/pug/pages/6.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'enrollee.html',
-            template: './src/pug/pages/enrollee.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'mainInf.html',
-            template: './src/pug/pages/mainInf.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'observatory.html',
-            template: './src/pug/pages/observatory.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
-        new HtmlWebpackPlugin({
-           filename: ' personTemplate.html',
-            template: './src/pug/pages/personTemplate.pug',
-            minify: false,
-            favicon: './src/assets/images/atom.ico',
-
-        }),
+        HtmlPluginBuild('main.html','./src/pug/index.pug'),
+        HtmlPluginBuild('dekanat.html','./src/pug/pages/dekanat.pug'),
+        HtmlPluginBuild('news.html','./src/pug/pages/news.pug'),
+        HtmlPluginBuild('spex.html','./src/pug/pages/spec.pug'),
+        HtmlPluginBuild('pageNews.html','./src/pug/pages/pageNews.pug'),
+        HtmlPluginBuild('1.html','./src/pug/pages/1.pug'),
+        HtmlPluginBuild('2.html','./src/pug/pages/2.pug'),
+        HtmlPluginBuild('3.html','./src/pug/pages/3.pug'),
+        HtmlPluginBuild('4.html','./src/pug/pages/4.pug'),
+        HtmlPluginBuild('5.html','./src/pug/pages/5.pug'),
+        HtmlPluginBuild('6.html','./src/pug/pages/6.pug'),
+        HtmlPluginBuild('enrollee.html','./src/pug/pages/enrollee.pug'),
+        HtmlPluginBuild('mainInf.html','./src/pug/pages/mainInf.pug'),
+        HtmlPluginBuild('observatory.html','./src/pug/pages/observatory.pug'),
+        HtmlPluginBuild('personTemplate.html','./src/pug/pages/personTemplate.pug'),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
