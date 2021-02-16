@@ -3,25 +3,25 @@
 .person_template{
   padding: 50px;
   min-height: 500px;
-  .float_wrap{
+  &_float_wrap{
     img{
       float: left;
       margin: 0 45px 20px 0px;
     }
   }
-  .title{
+  &_title{
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 25px;
   }
-  .text{
+  &_text{
     p{
       margin-bottom: 10px;
     }
-    .bold{
-      font-weight: 700;
-      margin-right: 10px;
-    }
+  }
+  &_bold{
+    font-weight: 700;
+    margin-right: 10px;
   }
   a{
     color: $black;
