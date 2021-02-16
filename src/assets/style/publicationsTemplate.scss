@@ -1,0 +1,44 @@
+@import "variables";
+.publications_template{
+  padding: 50px;
+  min-height: 500px;
+  &_wrap{
+    display: block;
+    padding-bottom: 50px;
+  }
+  &_description{
+    padding: 25px 10px;
+    .text{
+      color: #666666;
+      margin: 10px 0;
+    }
+  }
+  a{
+    color: $black;
+    display: inline;
+    font-size: 1em;
+    border-bottom: 2px solid $prime;
+    &:hover{
+      color: $prime;
+    }
+  }
+}
+@media only screen and (min-width: 75em) {
+  .publications_template {
+    &_wrap {
+      display: flex;
+    }
+  }
+}@media only screen and (min-width: 62em) {
+  .publications_template {
+    &_wrap {
+      display: flex;
+    }
+  }
+}@media only screen and (min-width: 48em) {
+  .publications_template {
+    &_wrap {
+      display: flex;
+    }
+  }
+}

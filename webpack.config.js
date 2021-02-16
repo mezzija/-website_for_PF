@@ -118,6 +118,7 @@ const config = {
         HtmlPluginBuild('mainInf.html','./src/pug/pages/mainInf.pug'),
         HtmlPluginBuild('observatory.html','./src/pug/pages/observatory.pug'),
         HtmlPluginBuild('personTemplate.html','./src/pug/pages/personTemplate.pug'),
+        HtmlPluginBuild('publicationsTemplate.html','./src/pug/pages/publicationsTemplate.pug'),
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
