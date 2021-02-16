@@ -1,18 +1,8 @@
-doctype html
-html
-    head
-        meta(charset='utf-8')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Контакты
-        script
-            include ../../assets/wow.js
+include ../template/head
+include ../template/header
+.pages
+    .container
+        .page_name Контакты
+        a(href='#') Деканат
 
-    body(style='background-color: #ffffff;')
-        include ../svg/svg
-        include ../template/header
-        .pages
-            .container
-                .page_name Контакты
-                a(href='#') Деканат
-
-        include ../template/footer
+include ../template/footer

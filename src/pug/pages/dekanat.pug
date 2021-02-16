@@ -1,93 +1,83 @@
-doctype html
-html
-    head
-        meta(charset='utf-8')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Деканат
-        script
-            include ../../assets/wow.js
-
-    body(style='background-color: #ffffff;')
-        include ../svg/svg
-        include ../template/header
-        .dekanat
-            .container
-                .page_name Деканат
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan.png').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Тиванов Михаил Сергеевич
-                        .description
-                            |Декан
-                            br
-                            |кандидат физико-математических наук, доцент
-                        .description
-                            p сл.тел: (375-17) 209-52-50
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: tivanov@bsu.by
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan2.jpg').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Горбачук Николай Иванович
-                        .description
-                            |Заместитель декана по учебной и методической работе
-                            br
-                            |кандидат физико-математических наук, доцент
-                        .description
-                            p сл.тел: (375-17) 209-55-06
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: Gorbachuk@bsu.by
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan3.jpg').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Ляшенко Людмила Сергеевна
-                        .description
-                            | Заместитель декана по учебно-воспитательной работе и социальным вопросам
-                            br
-                            | кандидат физико-математических наук, доцент
-                        .description
-                            p сл.тел: (375-17) 209-50-67
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: lyashenko@bsu.by
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan4.jpg').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Папковская Наталья Федоровна
-                        .description
-                            | Старший инспектор
-                            br
-                        .description
-                            p сл.тел: (375-17) 209-52-67
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: Papkousk@bsu.by
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan5.jpg').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Фурс Светлана Васильевна
-                        .description
-                            | Методист
-                            br
-                        .description
-                            p сл.тел: (375-17) 209-55-07
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: Furssv@bsu.by
-                .page.row.center-lg.center-md.center-sm.center-xs
-                    .col-lg-5.col-md-5.col-sm-12.col-xs-12
-                        img(src=require('../../assets/images/dekan6.jpg').default)
-                    .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
-                        .title Колесова Ирина Михайловна
-                        .description
-                            | Специалист (диспетчер)
-                            br
-                        .description
-                            p сл.тел: (375-17) 209-51-15
-                            p (факс): (375-17) 209-54-45
-                            p E-mail: tivanov@bsu.by
+include ../template/head
+include ../template/header
+.dekanat
+    .container
+        .page_name Деканат
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan.png').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Тиванов Михаил Сергеевич
+                .description
+                    |Декан
+                    br
+                    |кандидат физико-математических наук, доцент
+                .description
+                    p сл.тел: (375-17) 209-52-50
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: tivanov@bsu.by
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan2.jpg').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Горбачук Николай Иванович
+                .description
+                    |Заместитель декана по учебной и методической работе
+                    br
+                    |кандидат физико-математических наук, доцент
+                .description
+                    p сл.тел: (375-17) 209-55-06
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: Gorbachuk@bsu.by
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan3.jpg').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Ляшенко Людмила Сергеевна
+                .description
+                    | Заместитель декана по учебно-воспитательной работе и социальным вопросам
+                    br
+                    | кандидат физико-математических наук, доцент
+                .description
+                    p сл.тел: (375-17) 209-50-67
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: lyashenko@bsu.by
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan4.jpg').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Папковская Наталья Федоровна
+                .description
+                    | Старший инспектор
+                    br
+                .description
+                    p сл.тел: (375-17) 209-52-67
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: Papkousk@bsu.by
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan5.jpg').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Фурс Светлана Васильевна
+                .description
+                    | Методист
+                    br
+                .description
+                    p сл.тел: (375-17) 209-55-07
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: Furssv@bsu.by
+        .page.row.center-lg.center-md.center-sm.center-xs
+            .col-lg-5.col-md-5.col-sm-12.col-xs-12
+                img(src=require('../../assets/images/dekan6.jpg').default)
+            .inf.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                .title Колесова Ирина Михайловна
+                .description
+                    | Специалист (диспетчер)
+                    br
+                .description
+                    p сл.тел: (375-17) 209-51-15
+                    p (факс): (375-17) 209-54-45
+                    p E-mail: tivanov@bsu.by
 
 
-        include ../template/footer
+include ../template/footer

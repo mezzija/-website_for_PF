@@ -1,21 +1,11 @@
-doctype html
-html
-    head
-        meta(charset='utf-8')
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Новости
-        script
-            include ../../assets/wow.js
-
-    body(style='background-color: #ffffff;')
-        include ../svg/svg
-        include ../template/header
-        .somePage
-            .container
-                .page_name Новый буклет Физического факультета!
-                .col-lg-6.col-md-6.col-sm-12.col-xs-12
-                    img(src=require('../../assets/images/news1.jpg').default)
-                .data Опубликованно 20.07.2020 by Ильюшка
-                .inf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci animi architecto aspernatur blanditiis eos expedita ipsum magnam magni molestiae molestias mollitia nulla numquam odio odit perspiciatis porro quae quas quasi, qui, quia quibusdam quisquam repudiandae tenetur totam voluptate, voluptatem voluptates. Ab culpa cupiditate delectus dolores earum est, explicabo hic incidunt mollitia necessitatibus non obcaecati quam quasi quibusdam quod repellendus tempore veniam? Accusamus adipisci assumenda commodi consectetur cum dicta expedita fugiat illum ipsum iure, laboriosam laborum laudantium modi molestiae placeat reiciendis repellat suscipit totam, unde vel. Atque consequuntur, delectus eos labore laborum numquam rerum voluptate! Error ex nihil officiis ullam.
-                a(href='#') Прикрепленные документы
-        include ../template/footer
+include ../template/head
+include ../template/header
+.somePage
+    .container
+        .page_name Новый буклет Физического факультета!
+        .col-lg-6.col-md-6.col-sm-12.col-xs-12
+            img(src=require('../../assets/images/news1.jpg').default)
+        .data Опубликованно 20.07.2020 by Ильюшка
+        .inf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci animi architecto aspernatur blanditiis eos expedita ipsum magnam magni molestiae molestias mollitia nulla numquam odio odit perspiciatis porro quae quas quasi, qui, quia quibusdam quisquam repudiandae tenetur totam voluptate, voluptatem voluptates. Ab culpa cupiditate delectus dolores earum est, explicabo hic incidunt mollitia necessitatibus non obcaecati quam quasi quibusdam quod repellendus tempore veniam? Accusamus adipisci assumenda commodi consectetur cum dicta expedita fugiat illum ipsum iure, laboriosam laborum laudantium modi molestiae placeat reiciendis repellat suscipit totam, unde vel. Atque consequuntur, delectus eos labore laborum numquam rerum voluptate! Error ex nihil officiis ullam.
+        a(href='#') Прикрепленные документы
+include ../template/footer
