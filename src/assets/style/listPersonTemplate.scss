@@ -1,0 +1,58 @@
+@import "variables";
+.listPersonTemplate{
+  padding: 50px;
+  min-height: 500px;
+  img{
+    margin-bottom: 10px;
+  }
+  &_title{
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &_wrap{
+    display: block;
+    padding-bottom: 70px;
+  }
+  &_description{
+    margin-left: 15px;
+    a{
+      font-weight: 700;
+      font-size: 25px!important;
+    }
+    .text{
+      margin-top: 25px;
+    }
+  }
+  a{
+    color: $black;
+    display: inline;
+    font-size: 1em;
+    border-bottom: 2px solid $prime;
+    &:hover{
+      color: $prime;
+    }
+  }
+}
+@media only screen and (min-width: 48em) {
+  .listPersonTemplate {
+    &_wrap {
+      display: block;
+    }
+  }
+}
+@media only screen and (min-width: 62em) {
+  .listPersonTemplate {
+    &_wrap {
+      display: flex;
+    }
+  }
+}
+@media only screen and (min-width: 75em) {
+  .listPersonTemplate {
+    &_wrap {
+      display: flex;
+    }
+  }
+}
+
